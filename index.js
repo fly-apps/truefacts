@@ -71,7 +71,7 @@ const sequelize = new Sequelize(
             res.status(200).json(facts)
         });
 
-        app.listen(port);
+        app.listen(port, "0.0.0.0");
     } catch (error) {
         console.error("Error caught:", error);
     }
